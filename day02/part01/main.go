@@ -20,7 +20,7 @@ func part01(inputFile string) int {
 	for s.Scan() {
 		count := countRunes(s.Text())
 
-		var hasDouble, hasTriple bool
+		hasDouble, hasTriple := false, false
 		for _, c := range count {
 			switch c {
 			case 2:
