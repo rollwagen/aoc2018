@@ -39,6 +39,7 @@ func main() {
 	result, ok := part02("input.txt")
 	if ok {
 		fmt.Printf("day02: %s\n", result)
+		os.Exit(0)
 	}
 	log.Fatal("could not calculate result")
 }
